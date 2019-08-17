@@ -12,13 +12,13 @@ red = (255, 0, 0)
 green = (0, 155, 0)
 
 # load images
-food_img_loc = 'food/'
-snake_head_img = pg.image.load('snake_head.png')
+food_img_loc = '../resources/food/'
+snake_head_img = pg.image.load('../resources/snake_head.png')
 food_img_file = random.choice(os.listdir(food_img_loc))
 food = pg.image.load(food_img_loc + food_img_file)
 
 # load and set icon
-icon = pg.image.load('snake_head.png')
+icon = pg.image.load('../resources/snake_head.png')
 pg.display.set_icon(icon)  # size is 32x32
 
 # display config

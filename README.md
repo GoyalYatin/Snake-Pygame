@@ -4,11 +4,13 @@ A simple snake game created using pygame and python
 ### Index
 - [Screenshots](#screenshot)
 - [Game Features](#feature)
+- [Game Controls](#controls)
 - [Setup](#setup)
 - [License](#license)
 
 ### <a name="screenshot"></a>Screenshots
 
+![screenshots](doc/screenshot.png)
 
 ### <a name="feature"></a>Game Features
 It has following features
@@ -33,9 +35,10 @@ Features to come:
 | Move Right   | <kbd>right</kbd>    |
 | Move Up      | <kbd>up</kbd>       |
 | Move Down    | <kbd>down</kbd>     |
-| Pause game   | <kbd>P</kbd>        |
-| Quit game    | <kbd>P</kbd>        |
-| Start game   | <kbd>P</kbd>        |
+| Pause game   | <kbd>p</kbd>        |
+| UnPause game | <kbd>c</kbd>        |
+| Quit game    | <kbd>q</kbd>        |
+| Start game   | <kbd>c</kbd>        |
 
 ### <a name="setup"></a>Setup 
 
