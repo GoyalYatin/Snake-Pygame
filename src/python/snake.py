@@ -2,37 +2,45 @@ import pygame as pg
 import random
 import os
 
+# Initialize the pygame
 pg.init()
 
+# Colors
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
 green = (0, 155, 0)
-food_img_loc = '../resources/images/food/'
-snake_head_img = pg.image.load('../resources/images/snake_head.png')
+
+# load images
+food_img_loc = 'food/'
+snake_head_img = pg.image.load('snake_head.png')
 food_img_file = random.choice(os.listdir(food_img_loc))
 food = pg.image.load(food_img_loc + food_img_file)
 
+# load and set icon
+icon = pg.image.load('snake_head.png')
+pg.display.set_icon(icon)  # size is 32x32
 
+# display config
 display_width = 800
 display_height = 600
+
 # define surface as gameDisplay
 gameDisplay = pg.display.set_mode((display_width, display_height))
+
 # set title of the game window
 pg.display.set_caption("Snake Game")
 
-# set icon
-icon = pg.image.load('../resources/images/snake_head.png')
-pg.display.set_icon(icon)  # size is 32x32
-
 # intialize frames per second
 clock = pg.time.Clock()
+
 
 block_size = 20
 FPS = 15
 food_thickness = 30
 direction = "right"
 
+# fonts
 small_font = pg.font.SysFont("comicsansms", 25)
 med_font = pg.font.SysFont("comicsansms", 50)
 large_font = pg.font.SysFont("comicsansms", 75)
